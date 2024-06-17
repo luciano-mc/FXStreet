@@ -1,0 +1,88 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  min-height: calc(100vh - 4rem);
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.sort-filters-container {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.sort-filter {
+  font-family: 'Roboto';
+  font-size: medium;
+  font-weight: bold;
+  color: #8C8D91;
+  cursor: pointer;
+  background-color: none;
+  border: none;
+}
+
+.sort-filter.active {
+  color: #e4871b;
+}
+
+.filter__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .feed {
+    min-width: 400px;
+  }
+
+  .filter__mobile {
+    display: none;
+  }
+
+  .filter__desktop {
+    display: block;
+    font-size: 14px;
+  }
+
+  .filter__desktop-select {
+    background-color: transparent; 
+    font-weight: bold; 
+    border: none;
+    padding: 10px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto';
+  }
+
+  .filter__desktop-select:focus {
+    outline: none;
+    border: none;
+  }
+
+  .filter__desktop-select option {
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .filter__desktop-select option:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .filter__desktop-select option:selected {
+    background-color: #ccc;
+  }
+}
+
