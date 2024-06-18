@@ -28,7 +28,6 @@
 
 .logo {
   position: relative;
-  width: 140px;
 }
 
 .logo img {
@@ -47,7 +46,7 @@
     justify-content: start;
     align-items: start;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
     gap: 100px;
     max-width: 250px;
   }

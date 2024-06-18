@@ -55,14 +55,15 @@
 
 .post__author {
   color: #a3a3a8;
+  font-size: 17px;
   grid-row: 1;
   grid-column: 1/12 span;
 }
 
 .post__logo-container {
   grid-row: 2;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   position: relative;
 }
 
@@ -140,4 +141,21 @@
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 11' fill='none'%3E%3Cpath d='M0 9.83437V0.965625C0 0.667708 0.1375 0.461458 0.4125 0.346875C0.710417 0.232291 0.9625 0.278125 1.16875 0.484375L5.60313 4.91875C5.74063 5.05625 5.80938 5.21667 5.80938 5.4C5.80938 5.58333 5.74063 5.74375 5.60313 5.88125L1.16875 10.3156C0.9625 10.5219 0.710417 10.5677 0.4125 10.4531C0.1375 10.3385 0 10.1323 0 9.83437Z' fill='%2399B2D3'/%3E%3C/svg%3E");
   }
   
+  .post__head-body {
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 0;
+    padding: 15px;
+  }
+
+  .post__author {
+    grid-row: 1;
+    grid-column: 2/12 span;
+  }
+
+  .post__logo-container {
+    grid-row: 1/2 span;
+    justify-self: center;
+    align-self: start;
+    margin-right: 20px;
+  }
 }

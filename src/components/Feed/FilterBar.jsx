@@ -24,8 +24,8 @@ function FilterBar({ activeTab, setActiveTab }) {
             <span>Show:</span>
             <select className="filter__desktop-select">
               <option value="">All</option>
-              <option value="Latest" onClick={() => setActiveTab(1)}>Latest</option>
-              <option value="Popular" onClick={() => setActiveTab(2)}>Popular</option>
+              <option value="Latest">Latest</option>
+              <option value="Popular">Popular</option>
             </select>
           </div>
         </div>

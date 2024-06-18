@@ -48,17 +48,18 @@
 
   .filter__desktop {
     display: block;
-    font-size: 14px;
+    font-size: medium;
   }
 
   .filter__desktop-select {
     background-color: transparent; 
     font-weight: bold; 
+    font-size: medium;
+    font-family: 'Roboto';
     border: none;
     padding: 10px; 
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Roboto';
   }
 
   .filter__desktop-select:focus {
