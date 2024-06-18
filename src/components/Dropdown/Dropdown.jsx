@@ -1,6 +1,6 @@
 import './Dropdown.css';
 import { useState } from 'react';
-import { HideIcon, AssetsIcon, DotsIcon, BackArrowIcon } from '../../assets/Icons.jsx';
+import { HideIcon, AssetsIcon, DotsIcon, BackArrowIcon } from '@/assets/Icons.jsx';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,13 +41,16 @@ const Dropdown = () => {
         <ul className="dropdown-options">
           {!showMoreOptions ? (
             options.map((option, index) => (
-              <li key={index} onClick={() => handleOptionClick(option)}>
+              <li key={index} onClick={() => handleOptionClick(option)} className="option">
                 {option.icon} {option.label}
               </li>
             ))
           ) : (
             <>
-              <li onClick={handleBackClick}><BackArrowIcon /> Tell us why:</li>
+              <li onClick={handleBackClick} className="option">
+                <BackArrowIcon /> 
+                Tell us why:
+              </li>
               {moreOptions.map((option, index) => (
                 <li key={index}>
                   <label className="option-label">
@@ -60,7 +63,7 @@ const Dropdown = () => {
                   </label>
                 </li> 
               ))}
-              <li><input type="text" placeHolder="Hide content" className="dropdown-submenu__input" /></li>
+              <li className="option"><input type="text" placeHolder="Hide content" className="dropdown-submenu__input" /></li>
             </>
           )}
         </ul>

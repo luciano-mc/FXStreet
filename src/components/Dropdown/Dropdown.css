@@ -32,7 +32,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 20px;
   gap: 10px;
   position: relative;
 }
@@ -41,14 +40,20 @@
   background-color: hsl(0, 0%, 55%, .2);
 }
 
-.dropdown-options > li:last-child:hover {
+.dropdown-options > li:last-child:has(> input):hover {
   background-color: transparent;
+}
+
+
+.option {
+  padding: 20px;
 }
 
 .option-label {
   display: block;
   width: 100%;
   cursor: pointer;
+  padding: 20px;
 }
 
 .dropdown-submenu__input {

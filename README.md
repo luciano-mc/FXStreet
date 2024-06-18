@@ -1,8 +1,5 @@
-# React + Vite
+# FXStreet code challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+La app está hecha con React y Vite. Para los estilos utilicé metodología BEM y tanto flexbox como grid. Organicé la estructura en componentes y centralicé los iconos y logos en la carpeta assets. El diseño es responsive y tiene un solo breakpoint en 1024px
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Puede visualizarce en [fx-street.vercel.app](fx-street.vercel.app/)

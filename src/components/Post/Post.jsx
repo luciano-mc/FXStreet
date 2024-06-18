@@ -1,8 +1,8 @@
 import './Post.css';
-import useDateFormat from '../../hooks/useDateFormat';
+import useDateFormat from '@/hooks/useDateFormat';
 import DOMPurify from 'dompurify';
-import Dropdown from '../Dropdown/Dropdown';
-import { LikeIcon, SaveIcon, FeedIcon, ClockIcon } from '../../assets/Icons.jsx';
+import Dropdown from '@/components/Dropdown/Dropdown';
+import { LikeIcon, SaveIcon, FeedIcon, ClockIcon } from '@/assets/Icons.jsx';
 import { useState } from 'react';
 
 function Post({ post }) {

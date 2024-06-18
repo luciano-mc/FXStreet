@@ -1,6 +1,6 @@
 import './Navbar.css';
-import FXLogoDesktop from '../../assets/logo-desktop.svg';
-import FXLogoMobile from '../../assets/logo-mobile.svg';
+import FXLogoDesktop from '@/assets/logo-desktop.svg';
+import FXLogoMobile from '@/assets/logo-mobile.svg';
 
 function Navbar() {
   return (
